@@ -12,10 +12,10 @@
   },
   "dependencies": {
     "hamburger-react": "^2.5.2",
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1",
-    "react-router": "^8.5.1",
-    "isbot": "^5"
+    "isbot": "^5",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-router": "^8.5.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

@@ -33,6 +33,9 @@ jobs:
         run: npm ci
 
       - name: Build project
+        env:
+          NODE_ENV: production
+          GITHUB_ACTIONS: true
         run: npm run build
 
       - name: Setup Pages
