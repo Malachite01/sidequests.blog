@@ -1,13 +1,10 @@
-import { } from 'react'
-import './style.css'
+// import ASCIIText from './components/ASCIIText'
 
-import ASCIIText from './components/ASCIIText'
-
-function App() {
+function Home() {
 
   return (
     <>
-    <ASCIIText
+    {/* <ASCIIText
         text="Sidequests"
         asciiFontSize={8}
         colors={["#ff6188","#fc9867","#ffd866"]}
@@ -22,9 +19,9 @@ function App() {
         clickRipple
         idle
         interactive
-    />
+    /> */}
     </>
   )
 }
 
-export default App
+export default Home
