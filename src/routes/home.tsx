@@ -1,27 +1,23 @@
-// import ASCIIText from './components/ASCIIText'
+import ASCIIWallPaper from '../components/ASCIIWallPaper';
 
 function Home() {
-
   return (
     <>
-    {/* <ASCIIText
-        text="Sidequests"
-        asciiFontSize={8}
-        colors={["#ff6188","#fc9867","#ffd866"]}
-        textScale={1}
-        blocks={0.9}
-        waves={1}
-        waveSpeed={1}
-        chroma={1}
-        tilt={1}
-        hueShift={1}
-        scramble={0.6}
-        clickRipple
-        idle
-        interactive
-    /> */}
+      <ASCIIWallPaper
+        className="ascii-wallpaper"
+        glyphs="   .:;-=+*#%@"
+        size={16}
+        spacing={0.6}
+        color="#c2caae"
+        speed={0.35}
+        clearing={0.3}
+        holeQuantity={0.05}
+        opacity={0.45}
+        variant="field"
+      />
+      <h1>Home</h1>
     </>
-  )
+  );
 }
 
 export default Home

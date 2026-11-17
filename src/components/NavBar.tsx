@@ -61,7 +61,7 @@ function NavBar() {
         <Sling
           toggled={isMenuOpen}
           toggle={setIsMenuOpen}
-          size={24}
+          size={30}
           duration={0.4}
           label={isMenuOpen ? "Close menu" : "Open menu"}
           rounded
