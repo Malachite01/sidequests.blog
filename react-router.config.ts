@@ -5,7 +5,7 @@ export default {
   appDirectory: "src",
 
   basename: process.env.GITHUB_ACTIONS
-    ? "/sidequests.blog"
+    ? "/sidequests.blog/"
     : "/",
 
   ssr: false,
