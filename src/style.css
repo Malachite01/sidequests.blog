@@ -1,0 +1,12 @@
+:root {
+  --bg: #0f172a;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+}
+
+
+/*!  __________ */
+/*!  |_NavBar_|  */
