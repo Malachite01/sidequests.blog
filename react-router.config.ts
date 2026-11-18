@@ -13,5 +13,7 @@ export default {
   // add routes here
   prerender: [
     "/",
+    "/software",
+    "/hardware",
   ],
 } satisfies Config;

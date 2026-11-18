@@ -6,13 +6,14 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import "@fontsource-variable/syne";
+import "@fontsource-variable/unbounded";
 import "@fontsource-variable/dm-sans";
 import "./style.css";
 
 import ASCIIWallPaper from "./components/ASCIIWallPaper";
 import NavBar from "./components/NavBar";
 import TextType from "./components/TextType";
+import Footer from "./components/Footer";
 
 
 export function Layout({
@@ -82,7 +83,7 @@ export default function App() {
   }, []);
 
   return (
-    <>
+    <div id="app">
       {isLoading && (
         <div className="loading-screen" role="status" aria-live="polite">
           <ASCIIWallPaper
@@ -98,7 +99,7 @@ export default function App() {
             variant="rings"
           />
           <TextType
-            font="Syne Variable, sans-serif"
+            font="Unbounded Variable, sans-serif"
             text={["Loading..."]}
             typingSpeed={75}
             pauseDuration={2200}
@@ -120,9 +121,24 @@ export default function App() {
 
       <NavBar />
 
+      <ASCIIWallPaper
+        className="ascii-wallpaper"
+        glyphs="   .:;-=+*#%@"
+        size={16}
+        spacing={0.6}
+        color="#c2caae"
+        speed={0.35}
+        clearing={0.3}
+        holeQuantity={0.05}
+        opacity={0.45}
+        variant="field"
+      />
+
       <main>
         <Outlet />
       </main>
-    </>
+
+      <Footer />
+    </div>
   );
 }

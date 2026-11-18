@@ -5,10 +5,13 @@ import { Sling } from "hamburger-react";
 
 import "../style.css";
 import ASCIIText from "./ASCIIText";
+import GlitchLink from "./GlitchLink";
 
 // Routes
 const navLinks = [
   { label: "Home", to: "/" },
+  { label: "Software", to: "/software" },
+  { label: "Hardware", to: "/hardware" },
 ];
 
 function NavBar() {
@@ -40,7 +43,7 @@ function NavBar() {
         <ASCIIText
           text="Sidequests"
           asciiFontSize={5}
-          colors={["#ff6188","#fc9867","#ffd866"]}
+          colors={["#ff6188", "#fc9867", "#ffd866"]}
           textScale={2}
           blocks={0.9}
           waves={.6}
@@ -53,7 +56,7 @@ function NavBar() {
           idle
           interactive={false}
           charset=" .'`^&quot;,:;Il!i~+_-?][}{1)(|/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
-        /> 
+        />
       </Link>
 
       {/* Mobile hamburger */}
@@ -71,9 +74,8 @@ function NavBar() {
       {/* Navigation */}
       <nav
         id="primary-navigation"
-        className={`navbar-navigation ${
-          isMenuOpen ? "is-open" : ""
-        }`}
+        className={`navbar-navigation ${isMenuOpen ? "is-open" : ""
+          }`}
         aria-label="Main navigation"
       >
         {navLinks.map((link) => (
@@ -84,7 +86,9 @@ function NavBar() {
             className="navbar-link"
             onClick={() => setIsMenuOpen(false)}
           >
-            {"/" + link.label}
+            <GlitchLink>
+              {">/" + link.label}
+            </GlitchLink>
           </NavLink>
         ))}
       </nav>
