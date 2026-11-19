@@ -1,3 +1,4 @@
+import Window from '../components/Window';
 export function meta() {
   return [{ title: "Home - Sidequests" }];
 }
@@ -5,7 +6,7 @@ export function meta() {
 function Home() {
   return (
     <>
-      <h1>Home</h1>
+      <Window title='Hello_World.txt' content='Super test pour montrer que ca marche.'/>
       {/* //TODO Socials, Discord status */}
     </>
   );

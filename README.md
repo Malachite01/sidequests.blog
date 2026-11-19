@@ -11,3 +11,5 @@ People to thanks :
 https://ritual.sh/resources/button-generator/ for the button
 
 https://mii.nxw.pw/login pour mon avatar mii
+
+https://countapi.mileshilliard.com/?utm_source=chatgpt.com#start for the counter
