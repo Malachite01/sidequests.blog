@@ -5,3 +5,9 @@
 - faire un bouton de partage
 - renseigner les comptes de socials
 - Footer : compteur de visites, year
+
+
+People to thanks : 
+https://ritual.sh/resources/button-generator/ for the button
+
+https://mii.nxw.pw/login pour mon avatar mii

@@ -1,3 +1,7 @@
+export function meta() {
+  return [{ title: "Hardware - Sidequests" }];
+}
+
 function hardware() {
   return (
     <>

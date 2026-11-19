@@ -1,3 +1,7 @@
+export function meta() {
+  return [{ title: "Showcase - Sidequests" }];
+}
+
 function Showcase() {
   return (
     <>

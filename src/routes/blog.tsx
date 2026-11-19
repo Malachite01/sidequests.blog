@@ -1,3 +1,7 @@
+export function meta() {
+  return [{ title: "Blog - Sidequests" }];
+}
+
 function Blog() {
   return (
     <>

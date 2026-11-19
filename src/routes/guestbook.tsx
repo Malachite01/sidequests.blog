@@ -1,3 +1,7 @@
+export function meta() {
+  return [{ title: "Guestbook - Sidequests" }];
+}
+
 function Guestbook() {
   return (
     <>

@@ -1,3 +1,7 @@
+export function meta() {
+  return [{ title: "Home - Sidequests" }];
+}
+
 function Home() {
   return (
     <>

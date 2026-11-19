@@ -1,3 +1,7 @@
+export function meta() {
+  return [{ title: "Software - Sidequests" }];
+}
+
 function software() {
   return (
     <>

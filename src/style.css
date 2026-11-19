@@ -239,12 +239,17 @@ html.is-loading body {
   overflow: hidden;
 }
 
-.footer-disclaimer,
-.footer-visits {
+.footer-disclaimer {
   width: 100%;
   margin: 0;
   text-align: center;
 }
 
 .footer-disclaimer { min-height: 24px; }
-.footer-visits { min-height: 20px; }
+.footer-visits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 8px;
+}
