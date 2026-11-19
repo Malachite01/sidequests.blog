@@ -29,6 +29,31 @@ export function Layout({
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
+        <link
+          rel="icon"
+          type="image/png"
+          href={`${import.meta.env.BASE_URL}favicons/favicon-96x96.png`}
+          sizes="96x96"
+        />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href={`${import.meta.env.BASE_URL}favicons/favicon.svg`}
+        />
+        <link
+          rel="shortcut icon"
+          href={`${import.meta.env.BASE_URL}favicons/favicon.ico`}
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={`${import.meta.env.BASE_URL}favicons/apple-touch-icon.png`}
+        />
+        <meta name="apple-mobile-web-app-title" content="Sidequests" />
+        <link
+          rel="manifest"
+          href={`${import.meta.env.BASE_URL}favicons/site.webmanifest`}
+        />
         <Meta />
         <Links />
       </head>

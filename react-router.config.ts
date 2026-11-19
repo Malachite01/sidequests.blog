@@ -15,5 +15,9 @@ export default {
     "/",
     "/software",
     "/hardware",
+    "/blog",
+    "/showcase",
+    "/webRbuttons",
+    "/guestbook",
   ],
 } satisfies Config;

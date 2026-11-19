@@ -1,4 +1,3 @@
-import Avatar from '../assets/avatar.webp';
 import ASCIIText from './ASCIIText';
 
 export default function Footer() {
@@ -10,7 +9,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-column footer-column--center">
-          <img className="footer-avatar" src={Avatar} alt="Avatar de Malachite01" />
+          <img src="https://avatars.githubusercontent.com/Malachite01" alt="https://avatars.githubusercontent.com/Malachite01" width={75} style={{ borderRadius: '50%' }}></img>
         </div>
 
         <div className="footer-column footer-column--right">

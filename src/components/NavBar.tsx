@@ -12,6 +12,10 @@ const navLinks = [
   { label: "Home", to: "/" },
   { label: "Software", to: "/software" },
   { label: "Hardware", to: "/hardware" },
+  { label: "Blog", to: "/blog" },
+  { label: "Showcase", to: "/showcase" },
+  { label: "Buttons & WebR", to: "/webRbuttons" },
+  { label: "Guestbook", to: "/guestbook" },
 ];
 
 function NavBar() {
