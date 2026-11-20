@@ -10,7 +10,8 @@ const socials = [
   { icon: "", name: "Discord", url: "https://discord.com/users/292341035907153921" },
   { icon: "", name: "Reddit", url: "https://www.reddit.com/u/Mathieu_atnes/" },
   { icon: "", name: "Steam", url: "https://steamcommunity.com/id/helloitisimalachite01/" },
-  { icon: "󰅶", name: "Ko-Fi (Free 3D Models and stuff)", url: "https://ko-fi.com/malachite01" }
+  { icon: "󰅶", name: "Ko-Fi (Free 3D Models and stuff)", url: "https://ko-fi.com/malachite01" },
+  { icon: "󰚌", name: "Root-Me (I need to practice more)", url: "https://www.root-me.org/Malachite_" },
 ];
 
 const peopleBtns = [
