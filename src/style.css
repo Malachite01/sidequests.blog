@@ -276,6 +276,16 @@ html.is-loading body {
 .window-tag span:nth-child(1) {color: magenta;}
 .window-tag span:nth-child(2) {color: yellow;}
 
+.window-body li {
+  min-width: 0;
+}
+
+.window-body a {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .tUnderline {
   color: magenta;
   text-decoration: underline;
