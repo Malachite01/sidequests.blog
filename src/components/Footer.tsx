@@ -55,7 +55,7 @@ export default function Footer() {
       <br />
 
       <div className="footer-visits">
-        <img onClick={() => navigator.clipboard.writeText(codeSnippet)} src="https://malachite01.github.io/sidequests.blog/buttons/button-88x31.gif" alt="My button" title="Click to copy my silly button :)" style={{ cursor: 'pointer', margin: '0 auto' }} width="88" height="31"/>
+        <img className="coolbutton" onClick={() => navigator.clipboard.writeText(codeSnippet)} src="https://malachite01.github.io/sidequests.blog/buttons/button-88x31.gif" alt="My button" title="Click to copy my silly button :)" style={{ cursor: 'pointer', margin: '0 auto' }} width="88" height="31"/>
         <p className="footer-visits">
           <span style={{ display: 'none' }}>
             {import.meta.env.PROD ? (

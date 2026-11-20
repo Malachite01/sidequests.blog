@@ -62,18 +62,30 @@ function Home() {
         content={
           <>
             <p>Here is my 88x31-button, if you like my blog, you can paste it on yours! <Emoji name="proud" /> </p>
-            <p><img onClick={() => navigator.clipboard.writeText('<a href="https://malachite01.github.io/sidequests.blog/" target="_blank" rel="noopener noreferrer"><img src="https://malachite01.github.io/sidequests.blog/buttons/button-88x31.gif" alt="Malachite01, come see my stuff!"/></a>')} src="https://malachite01.github.io/sidequests.blog/buttons/button-88x31.gif" alt="My button" title="Click to copy my silly button :)" style={{ cursor: 'pointer',   }} /> Click the button to copy the HTML code to your clipboard! Or just copy below : </p>
+            <div>
+              <img className="coolbutton" onClick={() => navigator.clipboard.writeText('<a href="https://malachite01.github.io/sidequests.blog/" target="_blank" rel="noopener noreferrer"><img src="https://malachite01.github.io/sidequests.blog/buttons/button-88x31.gif" alt="Malachite01, come see my stuff!"/></a>')} src="https://malachite01.github.io/sidequests.blog/buttons/button-88x31.gif" alt="My button" title="Click to copy my silly button :)" style={{ cursor: 'pointer',   }} /> 
+              <p>Click the button to copy the HTML code to your clipboard! Or just copy below :</p>
+            </div>
             <code style={{ display: "block", backgroundColor: "#1e1e1e", color: "#d4d4d4", padding: "10px", borderRadius: "5px", overflowX: "auto" }}>
               &lt;a href=&quot;https://malachite01.github.io/sidequests.blog/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;&lt;img src=&quot;https://malachite01.github.io/sidequests.blog/buttons/button-88x31.gif&quot; alt=&quot;Malachite01, come see my stuff!&quot;/&gt;&lt;/a&gt;
             </code>
 
             <br />
-            <h4>## Cool people and stuff, buttons</h4>
-            <p>Here are some buttons from other cool people with cool websites, check them out! <Emoji name="sideeye"/> </p>
+            <h4>## Cool buttons</h4>
+            <p>Here are some buttons from other cool people on the internet, check them out! <Emoji name="sideeye"/> </p>
+            <p className="tUnderline">People</p>
             <div className="button-grid">
-              <a href="https://pucas01.com"><img src="https://pucas01.com/button/button.png" alt="pucas01.com" /></a>
-              <a href="https://vmfunc.re/" target="_blank" rel="noopener noreferrer"><img src="https://vmfunc.re/button.png" alt="vmfunc.re" width="88" height="31" /></a>
+              <a className="coolbutton" href="https://pucas01.com" target="_blank" rel="noopener noreferrer"><img src="https://pucas01.com/button/button.png" alt="pucas01.com" width="88" height="31"/></a>
+              <a className="coolbutton" href="https://ptr.pet/" target="_blank" rel="noopener noreferrer"><img src="https://ptr.pet/88x31.gif" alt="ptr.pet" width="88" height="31" /></a>
+              <a className="coolbutton" href="https://vmfunc.re/" target="_blank" rel="noopener noreferrer"><img src="https://vmfunc.re/button.png" alt="vmfunc.re" width="88" height="31" /></a>
             </div>
+            <p className="tUnderline">Stuff</p>
+            <div className="button-grid">
+              <a className="coolbutton" href="https://en.wikipedia.org/wiki/Human" target="_blank" rel="noopener noreferrer"><img src="https://luuumine.com/badges/human.gif" alt="Humans.com" width="88" height="31" /></a>
+              <a className="coolbutton" href="https://www.kernel.org/" target="_blank" rel="noopener noreferrer"><img src="https://luuumine.com/badges/linux.gif" alt="Linux" width="88" height="31" /></a>
+              <a className="coolbutton" href="https://decomp-academy.dev/" target="_blank" rel="noopener noreferrer"><img src="https://malachite01.github.io/sidequests.blog/buttons/decomp.gif" alt="decomp-academy.dev" width="88" height="31" /></a>
+            </div>
+
           </>
         }
       />
