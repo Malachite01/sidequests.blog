@@ -1,5 +1,5 @@
 export function meta() {
-  return [{ title: "Web Rings & Buttons - Sidequests" }];
+  return [{ title: "Web Rings - Sidequests" }];
 }
 
 function WebRbuttons() {

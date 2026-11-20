@@ -25,15 +25,25 @@
 }
 
 /* Background  */
+html,
+body,
+#root,
 #app {
-  position: relative;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
-#root {
+#app {
   position: relative;
   z-index: 1;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
+}
+
+#app > main {
+  flex: 1 0 auto;
 }
 
 
@@ -184,6 +194,7 @@ html.is-loading body {
 /*!  |_Window_|  */
 
 .window {
+  position: relative;
   width: 90%;
   margin: 50px auto;
   background-color: var(--window-bg-color);
@@ -231,6 +242,11 @@ html.is-loading body {
   cursor: pointer;
 }
 
+.window-icons span:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
 .window-icons span:nth-child(1),
 .window-icons span:nth-child(2) {
   background-color: var(--window-title-bg);
@@ -240,19 +256,53 @@ html.is-loading body {
 }
 
 .window-content {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   padding: 10px;
   font-size: .85rem;
 }
 
+.window-body {
+  display: block;
+  margin-top: 8px;
+}
+
+.window-body > :first-child {
+  margin-top: 0;
+}
+
+.window-body > :last-child {
+  margin-bottom: 0;
+}
+
 .window-tag span:nth-child(1) {color: magenta;}
 .window-tag span:nth-child(2) {color: yellow;}
+
+.tUnderline {
+  color: magenta;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: magenta;
+}
+.tImportant {
+  color: cyan;
+}
+
+/*!  ________ */
+/*!  |_Home_|  */
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
 /*!  __________ */
 /*!  |_Footer_|  */
 
 .footer {
   z-index: 5;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
   min-height: 230px;
   display: flex;

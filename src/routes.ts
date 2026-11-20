@@ -10,6 +10,6 @@ export default [
   route("hardware", "routes/hardware.tsx"),
   route("blog", "routes/blog.tsx"),
   route("showcase", "routes/showcase.tsx"),
-  route("webRbuttons", "routes/webRbuttons.tsx"),
+  route("webRings", "routes/webRings.tsx"),
   route("guestbook", "routes/guestbook.tsx"),
 ];

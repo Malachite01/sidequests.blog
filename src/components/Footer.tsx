@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
 
       <p className="footer-disclaimer">
-        © 2026 Malachite01 - All rights reserved.
+        © {2026 == new Date().getFullYear() ? 2026 : "2026 - " + new Date().getFullYear()} Malachite01 - All rights reserved.
       </p>
 
       <br />

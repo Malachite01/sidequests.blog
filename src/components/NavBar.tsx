@@ -14,7 +14,7 @@ const navLinks = [
   { label: "Hardware", to: "/hardware" },
   { label: "Blog", to: "/blog" },
   { label: "Showcase", to: "/showcase" },
-  { label: "Buttons & WebR", to: "/webRbuttons" },
+  { label: "Web-Rings", to: "/webRings" },
   { label: "Guestbook", to: "/guestbook" },
 ];
 
