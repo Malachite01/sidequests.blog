@@ -72,7 +72,7 @@ function Home() {
 
             <br />
             <h4>## Cool buttons</h4>
-            <p>Here are some buttons from other cool people on the internet, check them out! <Emoji name="sideeye"/> </p>
+            <p>Here are some buttons from cool people on the internet, check them out! <Emoji name="sideeye"/> </p>
             <p className="tUnderline">People</p>
             <div className="button-grid">
               <a className="coolbutton" href="https://pucas01.com" target="_blank" rel="noopener noreferrer"><img src="https://pucas01.com/button/button.png" alt="pucas01.com" width="88" height="31"/></a>
