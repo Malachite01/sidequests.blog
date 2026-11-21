@@ -152,6 +152,12 @@ html.is-loading body {
   color: var(--accent);
 }
 
+.glitch-link.active {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: cyan;
+}
+
 .navbar-toggle {
   display: none;
   align-items: center;

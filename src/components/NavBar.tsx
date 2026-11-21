@@ -90,9 +90,11 @@ function NavBar() {
             className="navbar-link"
             onClick={() => setIsMenuOpen(false)}
           >
-            <GlitchLink>
-              {">/" + link.label}
-            </GlitchLink>
+            {({ isActive }) => (
+              <GlitchLink className={isActive ? "active" : ""}>
+                {">/" + link.label}
+              </GlitchLink>
+            )}
           </NavLink>
         ))}
       </nav>
