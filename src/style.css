@@ -76,6 +76,10 @@ h6 {
   pointer-events: none;
 }
 
+::selection {
+  background-color: cyan;
+  color: magenta;
+}
 
 /*!  ___________ */
 /*!  |_Loading_|  */
