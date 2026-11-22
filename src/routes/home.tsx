@@ -74,7 +74,7 @@ function Home() {
         title='Buttonssss!!!!!.png' 
         content={
           <>
-            <p>Here is my 88x31-button, if you like my blog, you can paste it on yours! <Emoji name="proud" /> </p>
+            <p>Here is my <a className="tUnderline" href="https://en.wikipedia.org/wiki/Web_badge" target="_blank" rel="noopener noreferrer">88x31-button</a>, if you like my blog, you can paste it on yours! <Emoji name="proud" /> </p>
             <div>
               <img className="coolbutton" onClick={() => navigator.clipboard.writeText('<a href="https://malachite01.github.io/sidequests.blog/" target="_blank" rel="noopener noreferrer"><img src="https://malachite01.github.io/sidequests.blog/buttons/button-88x31.gif" alt="Malachite01, come see my stuff!"/></a>')} src="https://malachite01.github.io/sidequests.blog/buttons/button-88x31.gif" alt="My button" title="Click to copy my silly button :)" style={{ cursor: 'pointer',   }} /> 
               <p>Click the button to copy the HTML code to your clipboard! Or just copy below :</p>
