@@ -86,7 +86,7 @@ function Home() {
             <br />
             <h4>## Cool buttons</h4>
             <p>Here are some buttons from cool people on the internet, check them out! <Emoji name="sideeye"/> </p>
-            <p className="tUnderline">People</p>
+            <p className="tImportant">People</p>
             <div className="button-grid">
               {peopleBtns.map((btn, index) => (
                 <a key={index} className="coolbutton" href={btn.url} target="_blank" rel="noopener noreferrer">
@@ -94,7 +94,7 @@ function Home() {
                 </a>
               ))}
             </div>
-            <p className="tUnderline">Stuff</p>
+            <p className="tImportant">Stuff</p>
             <div className="button-grid">
               {stuffBtns.map((btn, index) => (
                 <a key={index} className="coolbutton" href={btn.url} target="_blank" rel="noopener noreferrer">

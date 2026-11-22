@@ -302,6 +302,10 @@ html.is-loading body {
   text-decoration-style: wavy;
   text-decoration-color: magenta;
 }
+.tUnderline:hover {
+  color: cyan;
+  text-decoration-color: cyan;
+}
 .tImportant {
   color: cyan;
 }
