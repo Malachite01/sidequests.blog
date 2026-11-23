@@ -14,6 +14,7 @@ import ASCIIWallPaper from "./components/ASCIIWallPaper";
 import NavBar from "./components/NavBar";
 import TextType from "./components/TextType";
 import Footer from "./components/Footer";
+import GoBackUp from "./components/GoBackUp";
 
 
 export function Layout({
@@ -162,6 +163,8 @@ export default function App() {
       <main>
         <Outlet />
       </main>
+
+      <GoBackUp />
 
       <Footer />
     </div>

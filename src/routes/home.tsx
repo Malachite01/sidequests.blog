@@ -26,6 +26,10 @@ const stuffBtns = [
   { name: "decomp-academy.dev", url: "https://decomp-academy.dev/", img: "https://malachite01.github.io/sidequests.blog/buttons/decomp.gif" }
 ];
 
+const webrings = [
+  { name: "", url: "https://webring.wonderful.software/", img: "" },
+];
+
 function Home() {
   return (
     <>
@@ -34,9 +38,7 @@ function Home() {
         title='Hello_World.txt' 
         content={
           <>
-          <div>
-            <img src={Hi} alt="Hello World" width={100} />
-          </div>
+          <img src={Hi} alt="Hello World" width={100} />
           <div>
             <p>Hi! Welcome to my blog! I'm <u className='tUnderline'>Malachite01</u>, a {new Date().getFullYear() - 2003} year old person from France 🇫🇷.</p>
             <p>I love learning new subjects and doing cool stuffs like programming (soft dev, web dev, game dev), tinkering with electronics, cyber security stuff, and creating cool projects with my own hands (explore the blog to see !).</p>
@@ -103,6 +105,34 @@ function Home() {
               ))}
             </div>
 
+          </>
+        }
+      />
+
+      <Window
+        icon=' '
+        title='Webrings.png' 
+        content={
+          <>
+          {/* TODO */}
+            <p>Here are some <a className="tUnderline" href="https://en.wikipedia.org/wiki/Webring" target="_blank" rel="noopener noreferrer">webrings</a> I am part of, check them out! </p>
+            <div className="button-grid">
+              {webrings.map((webring, index) => (
+                <a key={index} className="coolbutton" href={webring.url} target="_blank" rel="noopener noreferrer">
+                  <img src={webring.img} alt={webring.name} />
+                </a>
+              ))}
+            </div>
+          </>
+        }
+      />
+
+      <Window
+      icon=' '
+      title='Discord.sh && Steam.sh' 
+      content={
+          <>
+            
           </>
         }
       />
