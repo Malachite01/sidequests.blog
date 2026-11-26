@@ -129,10 +129,10 @@ function Home() {
 
       <Window
       icon=' '
-      title='Discord.sh && Steam.sh' 
+      title='Presence.sh' 
       content={
           <>
-            
+
           </>
         }
       />

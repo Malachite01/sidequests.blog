@@ -20,6 +20,30 @@ const navLinks = [
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+
+  // Cacher le menu quand on scroll vers le bas, et le montrer quand on scroll vers le haut.
+  useEffect(() => {
+    let previousScrollY = window.scrollY;
+
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY <= 0 || currentScrollY < previousScrollY) {
+        setIsHidden(false);
+      } else if (currentScrollY > previousScrollY && currentScrollY > 80) {
+        setIsHidden(true);
+      }
+
+      previousScrollY = currentScrollY;
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Close the menu when pressing Escape.
   useEffect(() => {
@@ -37,7 +61,7 @@ function NavBar() {
   }, []);
 
   return (
-    <header className="navbar">
+    <header className={`navbar ${isHidden && !isMenuOpen ? "is-hidden" : ""}`}>
       {/* Logo / Website name */}
       <Link
         to="/"
