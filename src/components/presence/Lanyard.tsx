@@ -18,7 +18,7 @@ function Lanyard() {
       <div>
         <pre>{DISCORD_ASCII}</pre>
 
-        <p>Username: {presence.discord_user.username}#{presence.discord_user.discriminator}</p>
+        <p> Username: {presence.discord_user.username}#{presence.discord_user.discriminator}</p>
         <p className={`status ${presence.discord_status}`}>
           Status: {presence.discord_status.toUpperCase()}
         </p>

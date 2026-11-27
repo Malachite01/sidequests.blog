@@ -2,7 +2,6 @@ import Window from '../components/Window';
 import Hi from '../assets/hi.gif';
 import Emoji from '../components/Emoji';
 import Lanyard from '../components/presence/Lanyard';
-import Steam from '../components/presence/Steam';
 
 export function meta() {
   return [{ title: "Home - Sidequests" }];
@@ -134,9 +133,8 @@ function Home() {
       icon=' '
       title='Presence.sh' 
       content={
-          <div id="presence-container">
+          <div>
             <Lanyard />
-            <Steam />
           </div>
         }
       />

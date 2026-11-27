@@ -344,14 +344,6 @@ html.is-loading body {
   transition: transform 0.1s ease-in-out;
 }
 
-#presence-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
 .ascii-art {
   max-width: 100%;
   margin: 0 0 1rem;
