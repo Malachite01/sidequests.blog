@@ -344,8 +344,38 @@ html.is-loading body {
   transition: transform 0.1s ease-in-out;
 }
 
-.social-presence {
+#presence-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.ascii-art {
+  max-width: 100%;
+  margin: 0 0 1rem;
+  overflow-x: auto;
+  line-height: 1.2;
+  white-space: pre;
+}
+
+.status.online {
+  color: #43b581;
+}
+.status.idle {
+  color: #faa61a;
+}
+.status.dnd {
+  color: #f04747;
+}
+.status.offline {
+  color: #747f8d;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
   gap: 10px;
   margin-top: 10px;
 }

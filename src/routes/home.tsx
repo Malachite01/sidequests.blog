@@ -1,6 +1,9 @@
 import Window from '../components/Window';
 import Hi from '../assets/hi.gif';
 import Emoji from '../components/Emoji';
+import Lanyard from '../components/presence/Lanyard';
+import Steam from '../components/presence/Steam';
+
 export function meta() {
   return [{ title: "Home - Sidequests" }];
 }
@@ -115,7 +118,7 @@ function Home() {
         content={
           <>
           {/* TODO */}
-            <p>Here are some <a className="tUnderline" href="https://en.wikipedia.org/wiki/Webring" target="_blank" rel="noopener noreferrer">webrings</a> I am part of, check them out! </p>
+            <p>Here are some <a className="tUnderline" href="https://en.wikipedia.org/wiki/Webring" target="_blank" rel="noopener noreferrer">webrings</a> I am part of. </p>
             <div className="button-grid">
               {webrings.map((webring, index) => (
                 <a key={index} className="coolbutton" href={webring.url} target="_blank" rel="noopener noreferrer">
@@ -131,9 +134,10 @@ function Home() {
       icon=' '
       title='Presence.sh' 
       content={
-          <>
-
-          </>
+          <div id="presence-container">
+            <Lanyard />
+            <Steam />
+          </div>
         }
       />
     </>
